@@ -2636,7 +2636,7 @@ def doreamasmp4 (params):
  read_url , read_header = plugintools . read_body_and_headers ( url , headers = header )
  url = read_url . strip ( )
  matches =  re.findall(r'(?s)mb-3"><a href="(.+?)".*?src="(.+?)".*?500">(.+?)<', url, re.DOTALL)
- next = plugintools.find_single_match(url,'(?s)<a class="page-link.*?<a href="(.+?)"')
+ next = plugintools.find_single_match(url,'(?s)lass="page-item"><a href="(.+?)"')
  for url, thumb, title in matches:
   plugintools . add_item ( action = "doreamasmp4_1" , title = title , url = url , thumbnail = thumb , fanart="special://home/addons/plugin.video.iberika/tenor.gif", folder = True  )
  plugintools . add_item ( action = "doreamasmp4" , title = "PAGINA SIGUIENTE", url= "https://www20.doramasmp4.com/catalogue" + next, thumbnail = "https://2.bp.blogspot.com/-q5yGYcBCQzg/Uv1E2m4c6oI/AAAAAAAAA7I/mK2JPXZh1w0/s1600/SIGUIENTE.png", fanart="special://home/addons/plugin.video.iberika/tenor.gif", folder=True )
@@ -2975,7 +2975,7 @@ def seriesly_ultimas_series (params):
  url = params . get ( "url" )
  header = [ ]
  header . append ( [ "User-Agent" , "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:85.0) Gecko/20100101 Firefox/85.0" ] )
- header . append ( [ "Cookie" , "sucuri_cloudproxy_uuid_33d9ac9f6=f1a3b024a34e4f428d6e8e226c02bb0f" ] )
+ header . append ( [ "Cookie" , "sucuri_cloudproxy_uuid_33d9ac9f6=14b8584acd7ddbd5ec95eec547999c70" ] )
  read_url , read_header = plugintools . read_body_and_headers ( url , headers = header )
  url = read_url . strip ( )
  matches =  re.findall(r'(?s)TPost C.*?href="(.+?)".*?src="(.+?)".*?Yr">(.+?)<.*?Title">(.+?)<', url, re.DOTALL)
@@ -3702,11 +3702,12 @@ def documentales_online_cat (params):
 def documentales_online_cat_1 (params): 
  url = (  ( "https://www.documentales-online.com" + params . get("url") ) )
  header = [ ]
- header . append ( [ "User-Agent" , "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:85.0) Gecko/20100101 Firefox/85.0" ] )
+ header . append ( [ "User-Agent" , "Mozilla/5.0 (Windows NT 10.0; rv:75.0) Gecko/20100101 Firefox/75.0" ] )
  read_url , read_header = plugintools . read_body_and_headers ( url , headers = header )
  url = read_url . strip ( )
+ 
  matches =  re.findall(r'(?s)<h2><a href="(https://www.documentales-online.com.*?)">(.*?)<.*?src="(.*?)"', url, re.DOTALL)
- next = plugintools.find_single_match(url,'(?s)<a class="page larger.*?href="(.*?)"')
+ next = plugintools.find_single_match(url,'rel="next" href="(.+?)"')
  for url, title, thumb in matches:
   plugintools . add_item ( action = "documentales_online_1" , title = title, thumbnail = thumb , url = url , fanart="special://home/addons/plugin.video.iberika/tenor.gif", folder = True )
  plugintools . add_item ( action = "documentales_online_cat_1" , title = "PAGINA SIGUIENTE", url= next, thumbnail = "https://2.bp.blogspot.com/-q5yGYcBCQzg/Uv1E2m4c6oI/AAAAAAAAA7I/mK2JPXZh1w0/s1600/SIGUIENTE.png", fanart="special://home/addons/plugin.video.iberika/tenor.gif", folder=True )  

@@ -16,12 +16,6 @@
         <provides>video</provides>
   </extension>
 
-   <extension point="xbmc.addon.repository" name="tvchopo">
-        <info>https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/</datadir>
-    </extension>
-
   <extension point="xbmc.addon.metadata">
     <summary>DaQueenQueen Y JaviR</summary>
     <description>Todoso los enlaces,canales y demas contenido de el addon es sacado de webs , nosotros no alojamos ningun contenido.</description>
