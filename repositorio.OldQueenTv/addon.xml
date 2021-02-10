@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="OldQueenTv" name="OldQueenTv Repo" version="0.0.1" provider-name="DaQueenQueen Y JaviR">
+    <extension point="xbmc.addon.repository" name="OldQueenTv">
+        <info>https://raw.githubusercontent.com/daqueenqueen666/OldQueenTv/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/daqueenqueen666/OldQueenTv/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/daqueenqueen666/OldQueenTv/master/Repositorio/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio Addon</summary>
+        <description></description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
