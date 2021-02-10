@@ -15,10 +15,10 @@
         <provides>video</provides>
   </extension>
 	 
-   <extension point="xbmc.addon.repository" name="tvchopo">
-        <info>https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/</datadir>
+    <extension point="xbmc.addon.repository" name="OldQueenTv">
+        <info>https://raw.githubusercontent.com/daqueenqueen666/OldQueenTv/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/daqueenqueen666/OldQueenTv/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/daqueenqueen666/OldQueenTv/master/Repositorio/</datadir>
     </extension>
   
   <extension point="xbmc.addon.metadata">
